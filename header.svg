@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="300" viewBox="0 0 1040 300" role="img" aria-labelledby="title desc">
+  <title id="title">Guowei · 机器人仿真与工具开发</title>
+  <desc id="desc">深蓝色个人主页横幅，左侧为 Guowei 的名字与技术方向，右侧为机器人机械臂线稿。</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101923"/>
+      <stop offset="1" stop-color="#18333c"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8be1ce" stroke-opacity=".08"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1040" height="300" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1040" height="300" fill="url(#background)"/>
+    <rect x="650" width="390" height="300" fill="url(#grid)"/>
+    <circle cx="1050" cy="10" r="205" fill="none" stroke="#82e4cd" stroke-opacity=".09"/>
+    <circle cx="1050" cy="10" r="165" fill="none" stroke="#82e4cd" stroke-opacity=".09"/>
+    <path d="M 0 299 H 1040" stroke="#82e4cd" stroke-opacity=".3" stroke-width="2"/>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+      <circle cx="57" cy="47" r="4" fill="#82e4cd"/>
+      <text x="73" y="52" fill="#a4b6bf" font-size="14" letter-spacing="2">xiaow190 / notes &amp; experiments</text>
+      <text x="51" y="132" fill="#f2f2e9" font-size="64" font-weight="700" letter-spacing="5">GUOWEI</text>
+      <text x="56" y="176" fill="#c8d6da" font-size="22" letter-spacing="2">机器人仿真 · 工具开发 · 学习记录</text>
+      <g font-size="14" fill="#d4e9e5" text-anchor="middle">
+        <rect x="56" y="214" width="116" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
+        <text x="114" y="235">Go + Python</text>
+        <rect x="184" y="214" width="94" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
+        <text x="231" y="235">MuJoCo</text>
+        <rect x="290" y="214" width="68" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
+        <text x="324" y="235">VLA</text>
+      </g>
+      <rect x="713" y="33" width="275" height="234" rx="16" fill="#0c1a22" fill-opacity=".55" stroke="#82e4cd" stroke-opacity=".2"/>
+      <text x="735" y="60" fill="#8dadaf" font-size="11" letter-spacing="2">SIMULATION / 001</text>
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 741 221 H 961" stroke="#466268" stroke-width="2"/>
+        <path d="M 784 216 V 197 H 822 V 216" stroke="#c3d8d9" stroke-width="3"/>
+        <path d="M 803 195 L 785 140 L 855 98 L 902 135" stroke="#82e4cd" stroke-opacity=".13" stroke-width="22"/>
+        <path d="M 803 195 L 785 140 L 855 98 L 902 135" stroke="#82e4cd" stroke-width="6"/>
+        <path d="M 902 135 L 925 147 L 920 162 M 902 135 L 907 160 L 920 168" stroke="#f0d5a0" stroke-width="3"/>
+        <path d="M 923 193 H 946 V 215 H 923 Z" stroke="#f0d5a0" stroke-width="2" stroke-dasharray="4 4"/>
+        <path d="M 919 179 Q 937 169 944 185" stroke="#829aa1" stroke-width="1.5" stroke-dasharray="3 5"/>
+      </g>
+      <g fill="#11272e" stroke="#c5f2e8" stroke-width="3">
+        <circle cx="803" cy="195" r="7"/>
+        <circle cx="785" cy="140" r="8"/>
+        <circle cx="855" cy="98" r="8"/>
+        <circle cx="902" cy="135" r="6"/>
+      </g>
+      <text x="850" y="246" fill="#9fbdbe" font-size="12" text-anchor="middle" letter-spacing="2">感知 → 控制 → 动作</text>
+    </g>
+  </g>
+</svg>
