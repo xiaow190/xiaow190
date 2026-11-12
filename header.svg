@@ -1,53 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="300" viewBox="0 0 1040 300" role="img" aria-labelledby="title desc">
-  <title id="title">Guowei · 机器人仿真与工具开发</title>
-  <desc id="desc">深蓝色个人主页横幅，左侧为 Guowei 的名字与技术方向，右侧为机器人机械臂线稿。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="320" viewBox="0 0 1040 320" role="img" aria-labelledby="title desc">
+  <title id="title">GUOWEI · 机器人、仿真与工具开发</title>
+  <desc id="desc">黑色背景、电光青与蓝紫色线路，搭配终端风格文字、机械臂和线框球体。</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#101923"/>
-      <stop offset="1" stop-color="#18333c"/>
-    </linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8be1ce" stroke-opacity=".08"/>
-    </pattern>
-    <clipPath id="frame"><rect width="1040" height="300" rx="20"/></clipPath>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#03070e"/><stop offset="1" stop-color="#0b1324"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="0"><stop stop-color="#33f5d2"/><stop offset=".52" stop-color="#42caff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#147ca7" stop-opacity=".3"/><stop offset="1" stop-color="#147ca7" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#5da8d8" stroke-opacity=".08"/></pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <g clip-path="url(#frame)">
-    <rect width="1040" height="300" fill="url(#background)"/>
-    <rect x="650" width="390" height="300" fill="url(#grid)"/>
-    <circle cx="1050" cy="10" r="205" fill="none" stroke="#82e4cd" stroke-opacity=".09"/>
-    <circle cx="1050" cy="10" r="165" fill="none" stroke="#82e4cd" stroke-opacity=".09"/>
-    <path d="M 0 299 H 1040" stroke="#82e4cd" stroke-opacity=".3" stroke-width="2"/>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
-      <circle cx="57" cy="47" r="4" fill="#82e4cd"/>
-      <text x="73" y="52" fill="#a4b6bf" font-size="14" letter-spacing="2">xiaow190 / notes &amp; experiments</text>
-      <text x="51" y="132" fill="#f2f2e9" font-size="64" font-weight="700" letter-spacing="5">GUOWEI</text>
-      <text x="56" y="176" fill="#c8d6da" font-size="22" letter-spacing="2">机器人仿真 · 工具开发 · 学习记录</text>
-      <g font-size="14" fill="#d4e9e5" text-anchor="middle">
-        <rect x="56" y="214" width="116" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
-        <text x="114" y="235">Go + Python</text>
-        <rect x="184" y="214" width="94" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
-        <text x="231" y="235">MuJoCo</text>
-        <rect x="290" y="214" width="68" height="32" rx="16" fill="#82e4cd" fill-opacity=".1" stroke="#82e4cd" stroke-opacity=".25"/>
-        <text x="324" y="235">VLA</text>
-      </g>
-      <rect x="713" y="33" width="275" height="234" rx="16" fill="#0c1a22" fill-opacity=".55" stroke="#82e4cd" stroke-opacity=".2"/>
-      <text x="735" y="60" fill="#8dadaf" font-size="11" letter-spacing="2">SIMULATION / 001</text>
-      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M 741 221 H 961" stroke="#466268" stroke-width="2"/>
-        <path d="M 784 216 V 197 H 822 V 216" stroke="#c3d8d9" stroke-width="3"/>
-        <path d="M 803 195 L 785 140 L 855 98 L 902 135" stroke="#82e4cd" stroke-opacity=".13" stroke-width="22"/>
-        <path d="M 803 195 L 785 140 L 855 98 L 902 135" stroke="#82e4cd" stroke-width="6"/>
-        <path d="M 902 135 L 925 147 L 920 162 M 902 135 L 907 160 L 920 168" stroke="#f0d5a0" stroke-width="3"/>
-        <path d="M 923 193 H 946 V 215 H 923 Z" stroke="#f0d5a0" stroke-width="2" stroke-dasharray="4 4"/>
-        <path d="M 919 179 Q 937 169 944 185" stroke="#829aa1" stroke-width="1.5" stroke-dasharray="3 5"/>
-      </g>
-      <g fill="#11272e" stroke="#c5f2e8" stroke-width="3">
-        <circle cx="803" cy="195" r="7"/>
-        <circle cx="785" cy="140" r="8"/>
-        <circle cx="855" cy="98" r="8"/>
-        <circle cx="902" cy="135" r="6"/>
-      </g>
-      <text x="850" y="246" fill="#9fbdbe" font-size="12" text-anchor="middle" letter-spacing="2">感知 → 控制 → 动作</text>
-    </g>
+  <style>
+    .cursor { animation: blink 1.2s steps(1) infinite; }
+    .signal { stroke-dasharray: 5 13; animation: flow 4s linear infinite; }
+    .halo { animation: pulse 4s ease-in-out infinite; }
+    @keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+    @keyframes flow { to { stroke-dashoffset: -72; } }
+    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .signal, .halo { animation: none; } }
+  </style>
+  <rect width="1040" height="320" rx="10" fill="url(#bg)"/>
+  <rect width="1040" height="320" rx="10" fill="url(#grid)"/>
+  <ellipse cx="824" cy="158" rx="210" ry="164" fill="url(#aura)"/>
+  <rect x=".5" y=".5" width="1039" height="319" rx="10" fill="none" stroke="#24354a"/>
+  <g fill="none" stroke="#41e9dc" stroke-width="2"><path d="M1 37V10Q1 1 10 1H37 M1003 1H1030Q1039 1 1039 10V37 M1 283V310Q1 319 10 319H37 M1003 319H1030Q1039 319 1039 310V283"/></g>
+  <path d="M48 67H615 M48 264H615" stroke="#1b3446"/>
+  <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
+    <text x="48" y="46" fill="#38f2cf" font-size="15">&gt; xiaow190</text>
+    <text x="615" y="46" fill="#718797" font-size="11" text-anchor="end" letter-spacing="2">ROBOTICS / CODE</text>
+    <text x="45" y="151" fill="#effbff" font-size="76" font-weight="700" letter-spacing="5">GUOWEI</text>
+    <rect class="cursor" x="360" y="101" width="15" height="53" fill="#39f1d0"/>
+    <text x="48" y="239" fill="#8faebd" font-size="15" letter-spacing="1">Go <tspan fill="#3c657b">/</tspan> Python <tspan fill="#3c657b">/</tspan> MuJoCo <tspan fill="#3c657b">/</tspan> VLA</text>
+    <text x="48" y="292" fill="#476a80" font-size="10" letter-spacing="3">BUILD · SIMULATE · ITERATE</text>
   </g>
+  <text x="49" y="190" fill="#c0d6e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif" font-size="21" letter-spacing="3">机器人 · 仿真 · 工具开发</text>
+  <g transform="translate(827 155)" fill="none">
+    <circle r="113" stroke="#203e5a"/>
+    <circle r="101" stroke="#52a9d6" stroke-opacity=".3" stroke-dasharray="2 7"/>
+    <ellipse rx="101" ry="36" stroke="#419ed4" stroke-opacity=".2" transform="rotate(-30)"/>
+    <ellipse rx="45" ry="101" stroke="#419ed4" stroke-opacity=".2" transform="rotate(-30)"/>
+    <path d="M-111 25A114 114 0 0 1 35-108" stroke="url(#accent)" stroke-width="2"/>
+    <path class="halo" d="M108-32A114 114 0 0 1-22 112" stroke="#8778ff" stroke-width="2"/>
+    <path d="M-139 0H-120 M120 0H139 M0-139V-120 M0 120V139" stroke="#406885"/>
+    <g stroke="#3878b2" stroke-opacity=".45"><path d="M-80-43L-27-78L41-52L87 0L51 64L-32 79L-82 26Z M-80-43L-32 79M-27-78L51 64M41-52L-82 26M-82 26L87 0"/></g>
+    <path class="signal" d="M-80-43L-27-78L41-52L87 0L51 64L-32 79L-82 26Z" stroke="#4acff4" stroke-opacity=".7"/>
+    <g fill="#40dfe9" stroke="#06131e" stroke-width="2">
+      <circle cx="-80" cy="-43" r="4"/><circle cx="-27" cy="-78" r="4"/><circle cx="41" cy="-52" r="4"/><circle cx="87" r="4"/><circle cx="51" cy="64" r="4"/><circle cx="-32" cy="79" r="4"/><circle cx="-82" cy="26" r="4"/>
+    </g>
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-31 61L-48 5L15-39L58-5" stroke="#05101c" stroke-width="20"/>
+      <path d="M-31 61L-48 5L15-39L58-5" stroke="url(#accent)" stroke-width="6" filter="url(#glow)"/>
+      <path d="M-48 80V66H-14V80 M-63 82H1" stroke="#a2c7dc" stroke-width="2.5"/>
+      <path d="M58-5L73 6L68 18 M58-5L57 14L66 24" stroke="#e3f8ff" stroke-width="3"/>
+    </g>
+    <g fill="#07121c" stroke="#b8ffff" stroke-width="2.5"><circle cx="-31" cy="61" r="6"/><circle cx="-48" cy="5" r="7"/><circle cx="15" cy="-39" r="7"/><circle cx="58" cy="-5" r="5"/></g>
+    <circle class="halo" cx="15" cy="-39" r="13" stroke="#49e8e5" stroke-opacity=".6"/>
+  </g>
+  <path d="M668 289H982" stroke="url(#accent)" stroke-opacity=".5"/>
+  <g fill="#4c819e"><rect x="958" y="281" width="5" height="8"/><rect x="968" y="275" width="5" height="14"/><rect x="978" y="269" width="5" height="20"/></g>
 </svg>
